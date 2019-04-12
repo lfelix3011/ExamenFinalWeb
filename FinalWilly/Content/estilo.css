@@ -1,0 +1,370 @@
+
+* {
+    text-align: center;
+}
+
+.title {
+    text-align: center;
+    color: white;
+}
+
+.title-2 {
+    font-size: 50px;
+    font-weight: 700;
+    color: hsl(217, 71%, 53%);
+}
+
+.subtitle {
+    text-align: center;
+    color: white;
+}
+
+.card {
+    margin-top: 50px;
+}
+
+/**Create**/
+.container-mio-2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container-mio-2 .box-mio-2 {
+    position: relative;
+    width: 700px;
+    padding: 40px;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
+    border-radius: 4px;
+    margin: 20px;
+    margin: 20px auto;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.container-mio-2 .box-mio-2 .icon-mio-2 {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    color: #fff;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 50%;
+    font-size: 40px;
+    font-weight: 700;
+    transition: 1s;
+    -o-transition: 1s;
+    -moz-transition: 1s;
+    -webkit-transition: 1s;
+}
+
+.container-mio .box-mio .content-mio a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    margin-top: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+}
+
+.input-mio {
+    width: 500px;
+    margin-left: 20px;
+    margin-top: 4px;
+}
+
+.btn-create-2 {
+    width: 800px;
+}
+
+.boton-atras {
+    padding: 10px 20px;
+    background: #087dbd;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    margin-top: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+}
+
+.boton-atras:hover {
+    padding: 20px 30px;
+    background: #065b88;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    margin-top: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+}
+
+/**index grande**/
+.container-mio-4 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+    .container-mio-4 .box-mio-4 {
+        position: relative;
+        width: 1000px;
+        padding: 40px;
+        background: #fff;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
+        border-radius: 4px;
+        margin: 20px;
+        margin: 20px auto;
+        box-sizing: border-box;
+        overflow: hidden;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+        .container-mio-4 .box-mio-4 .icon-mio-4 {
+            position: relative;
+            width: 80px;
+            height: 80px;
+            color: #fff;
+            background: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            border-radius: 50%;
+            font-size: 40px;
+            font-weight: 700;
+            transition: 1s;
+            -o-transition: 1s;
+            -moz-transition: 1s;
+            -webkit-transition: 1s;
+        }
+
+/*index**/
+
+.boton-agregar {
+    padding: 5px 10px;
+    background: #087dbd;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    margin-top: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+}
+
+    .boton-agregar:hover {
+        padding: 10px 20px;
+        background: #065b88;
+        border-radius: 4px;
+        text-decoration: none;
+        color: #fff;
+        font-weight: 500;
+        margin-top: 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+    }
+
+/**eliminar*/
+.boton-eliminar:hover {
+    padding: 10px 20px;
+    background: #a82913;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+}
+
+.boton-eliminar-2 {
+    padding: 10px 20px;
+    background: #eb3f20;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+}
+
+.boton-eliminar-2:hover {
+    padding: 10px 20px;
+    background: #a82913;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+}
+
+/**detalle*/
+
+.boton-detalle {
+    padding: 10px 20px;
+    background: #13a8a8;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    margin-top: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+}
+
+.boton-detalle:hover {
+    padding: 20px 30px;
+    background: #14a3a3;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    margin-top: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+}
+
+
+/***Menu de procesos***/
+
+.container-mio .box-mio .icon-mio-3 {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    color: #fff;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 50%;
+    font-size: 40px;
+    font-weight: 700;
+    transition: 1s;
+    -o-transition: 1s;
+    -moz-transition: 1s;
+    -webkit-transition: 1s;
+}
+
+
+.container-mio .box-mio .content-mio-3 {
+    position: relative;
+    z-index: 1;
+    transition: 0.5s;
+    -o-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+}
+
+.container-mio .box-mio:hover .content-mio-3 {
+    color: #fff;
+}
+
+.container-mio .box-mio .content-mio-3 h3 {
+    font-size: 20px;
+    margin: 10px 0;
+    padding: 0;
+    font-weight: 700;
+}
+
+.container-mio .box-mio .content-mio-3 p {
+    margin: 0;
+    padding: 0;
+}
+
+.container-mio .box-mio .content-mio-3 a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    margin-top: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+}
+
+/***Menu de informes***/
+
+.container-mio .box-mio .icon-mio-4 {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    color: #fff;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 50%;
+    font-size: 40px;
+    font-weight: 700;
+    transition: 1s;
+    -o-transition: 1s;
+    -moz-transition: 1s;
+    -webkit-transition: 1s;
+}
+
+
+.container-mio .box-mio .content-mio-4 {
+    position: relative;
+    z-index: 1;
+    transition: 0.5s;
+    -o-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+}
+
+.container-mio .box-mio:hover .content-mio-4 {
+    color: #fff;
+}
+
+.container-mio .box-mio .content-mio-4 h3 {
+    font-size: 20px;
+    margin: 10px 0;
+    padding: 0;
+    font-weight: 700;
+}
+
+.container-mio .box-mio .content-mio-4 p {
+    margin: 0;
+    padding: 0;
+}
+
+.container-mio .box-mio .content-mio-4 a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    margin-top: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+}
+
+/*encabezado*/
+
+th{
+    text-align: center;
+}
+
+.btn-buscar {
+    margin-right: 20px;
+    margin-top: 5px;
+}
+
+.btn-buscar-2 {
+    margin-right: 20px;
+}
+
+.titulo-buscar {
+    margin-right: 250px;
+}
+
+.buscar-fecha{
+    margin-right:20px;
+}

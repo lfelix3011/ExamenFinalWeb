@@ -1,0 +1,20 @@
+﻿@model FinalWilly.Models.Usuario
+@if (Request.IsAuthenticated)
+{
+    using (Html.BeginForm("Salir", "Home", FormMethod.Post))
+    {
+        @Html.AntiForgeryToken()
+
+        <ul class="nav navbar-nav navbar-right">
+            <li>
+                @Html.ActionLink("Hola " + @Model.Email, "Home", new { area = "" }, new { @class = "button is-primary" })
+            </li>
+            <li><a href="javascript:document.getElementById('logoutForm').submit()">Log off</a></li>
+        </ul>
+    }
+}
+else
+{
+    @Html.ActionLink("Registrarse", "Registrarse", "Home", new { area = "" }, new { @class = "button is-primary" })
+    @Html.ActionLink("Inciar sesion", "Login", "Home", new { area = "" }, new { @class = "button is-light" })
+}

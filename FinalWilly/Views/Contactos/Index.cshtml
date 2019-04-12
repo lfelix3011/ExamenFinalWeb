@@ -1,0 +1,63 @@
+﻿@model IEnumerable<FinalWilly.Models.Contactos>
+
+@{
+    ViewBag.Title = "Index";
+}
+<div class="container-mio-4">
+    <div class="box-mio-4">
+        <h1 class="title-2">Inicio de Contactos</h1>
+        @using (Html.BeginForm("Index", "Contactos", FormMethod.Post))
+        {
+            @Html.Label("Buscar por Nombre del Contacto")
+
+            @Html.TextBox("nombre")
+            <input type="submit" value="Buscar" class="btn btn-success" /><br />
+        }
+        <table class="table">
+
+            <tr>
+                <th>
+                    @Html.DisplayName("Usuario que registro")
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Nombre)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Telefono)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Correo)
+                </th>
+                <th></th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Usuario.Email)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Nombre)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Telefono)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Correo)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Editar", "Edit", new { id = item.Id }, new { @class = "btn btn-primary" })
+                        @Html.ActionLink("Detalles", "Details", new { id = item.Id }, new { @class = "button is-info" })
+                        @Html.ActionLink("Borrar", "Delete", new { id = item.Id }, new { @class = "btn btn-danger" })
+                        @Html.ActionLink("Enviar Correo", "Correo", new { id = item.Id }, new { @class = "btn btn-warning" })
+                    </td>
+                </tr>
+            }
+
+        </table>
+        <p>
+            @Html.ActionLink("Agregar Contacto", "Create", "Contactos", null, new { @class = "button is-link" })
+        </p>
+    </div>
+    </div>

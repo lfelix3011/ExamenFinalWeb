@@ -1,0 +1,44 @@
+﻿@model FinalWilly.Models.Contactos
+
+@{
+    ViewBag.Title = "Correo";
+}
+
+<h2></h2>
+<div class="container-mio-4">
+    <div class="box-mio-4">
+        <div>
+            <h1 class="title-2">Correo de @Session["UserEmail"]</h1>
+            <hr />
+            <dl class="dl-horizontal">
+                <dt>
+                    @Html.DisplayName("De:")
+                </dt>
+
+                <dd>
+                    @Session["UserEmail"]
+                </dd>
+
+                <dt>
+                    @Html.DisplayName("Para:")
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Correo)
+                </dd>
+            </dl>
+            <br />
+            <textarea class="textarea" name="textarea" rows="5" cols="10" placeholder="Escriba lo que dese enviar" required></textarea>
+            <br />
+            @Html.ActionLink("Ver la lista de contactos", "Agenda", "Contactos", new { @class = "button is-info" }) |
+            @Html.ActionLink("Enviar", "Index", "Home", new { @class = "button is-outlined is-primary", @onclick = "enviar()" })
+        </div>
+        </div>
+    </div>
+
+<script>
+    function enviar()
+    {
+        alert("Mensaje Enviado Exitosamente");
+    }
+</script>

@@ -1,0 +1,55 @@
+﻿@model FinalWilly.Models.Usuario
+@{
+    ViewBag.Title = "Index";
+}
+
+@if (Session["UserID"] != null)
+{
+    <div class="card carta-inicio">
+        <div class="has-background-link">
+            <div class="card-content">
+
+                <p class="title">
+                    Bienvenido @Session["UserEmail"]
+                </p>
+                <p class="subtitle">
+                    En esta app podra registrar tus contactos
+                </p>
+            </div>
+        </div>
+        <img src="~/Img/1.png" width="200px" height="200px" alt="Alternate Text" />
+        <footer class="card-footer">
+            <p class="card-footer-item">
+                <span>
+                    @Html.ActionLink("Crear Contacto", "Create", "Contactos", null, new { @class = "button is-info" })
+                </span>
+            </p>
+        </footer>
+
+    </div>
+}
+else
+{
+    <div class="card carta-inicio">
+        <div class="has-background-link">
+            <div class="card-content">
+
+                <p class="title">
+                    Debe de Iniciar sesion
+                </p>
+                <p class="subtitle">
+                    Para poder disfrutar de todos los beneficios
+                </p>
+            </div>
+        </div>
+
+        <footer class="card-footer">
+            <p class="card-footer-item">
+                <span>
+                    @Html.ActionLink("Iniciar Sesion", "Login", "Home", null, new { @class = "button is-info" })
+                </span>
+            </p>
+        </footer>
+    </div>
+}
+
